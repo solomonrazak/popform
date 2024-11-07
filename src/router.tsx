@@ -5,24 +5,24 @@ import Workspace from "./pages/workspace";
 import Layout from "./layout";
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Layout />,
-        children: [
-            {
-                index: true,
-                element: <Profile />,
-            },
-            {
-                path: "/billing",
-                element: <Billing />,
-            },
-            {
-                path: "/workspace",
-                element: <Workspace />
-            },
-        ]
-    }
-])
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Profile />,
+      },
+      {
+        path: "/billing",
+        element: <Billing />,
+      },
+      {
+        path: "/workspace",
+        element: <Workspace />,
+      },
+    ],
+  },
+]);
 
 export default router;
