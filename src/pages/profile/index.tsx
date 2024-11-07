@@ -23,6 +23,7 @@ const Profile: React.FC = () => {
             type="text"
             id="name"
             value={inputName}
+            placeholder="Enter name here"
             className="border-[1.4px] py-2 rounded-md border-gray-200 pl-5"
             onChange={(e) => setInputName(e.target.value)}
           />
@@ -35,6 +36,7 @@ const Profile: React.FC = () => {
             type="text"
             id="email"
             value={email}
+            placeholder="Enter email here"
             className="border-[1.4px] py-2 rounded-md border-gray-200 pl-5"
             onChange={(e) => setEmail(e.target.value)}
           />
